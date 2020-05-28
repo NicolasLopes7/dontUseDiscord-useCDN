@@ -1,7 +1,15 @@
 import React from "react";
-
+import GlobalStyle from "./styles/global";
+import { Container, Content } from "./styles";
+import Upload from "./components/upload";
 function App() {
-  return <div className="App"></div>;
+  return (
+    <Container>
+      <Content>
+        <Upload />
+      </Content>
+      <GlobalStyle />
+    </Container>
+  );
 }
-
 export default App;
